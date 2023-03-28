@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Zeta</string>
+    <string name="but">Войти</string>
+    <string name="ID">ID удостоверения</string>
+    <string name="Pass">Пароль</string>
+    <string name="NumbID">57349912</string>
+    <string name="Surname">Фамилия:</string>
+    <string name="Name">Имя:</string>
+    <string name="LastName">Отчество:</string>
+    <string name="surnameval">Ефремов</string>
+    <string name="nameval">Ефим</string>
+    <string name="lstname">Евгеньевич</string>
+
+</resources>

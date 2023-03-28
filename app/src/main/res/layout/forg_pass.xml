@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ElementsColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow"
+            android:layout_marginLeft="20dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="20dp"
+        >
+
+
+        <EditText
+            android:id="@+id/newpass"
+            android:layout_width="369sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="40dp"
+
+            android:backgroundTint="@color/white"
+            android:hint="Новый пароль"
+            android:textColor="@color/EdTextColor"
+            android:textColorHint="@color/EdTextColor"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/dubl"
+            android:layout_width="369sp"
+            android:layout_height="50sp"
+            android:backgroundTint="@color/white"
+
+            android:layout_marginTop="60sp"
+            android:textColor="@color/EdTextColor"
+            android:layout_below="@id/newpass"
+            android:textSize="16dp"
+            android:hint="Повторите пароль"
+            android:textColorHint="@color/EdTextColor"/>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="140sp"
+            android:layout_height="50sp"
+            android:background="@drawable/outbutton"
+            android:text="Сохранить"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_below="@id/dubl"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/qwe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="3dp"
+
+
+            android:layout_marginTop="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="24dp"
+            android:text="@string/NumbID" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
