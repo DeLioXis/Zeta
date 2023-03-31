@@ -14,14 +14,19 @@ class forg_pass : AppCompatActivity() {
         setContentView(R.layout.forg_pass)
 
 
-        newpass = findViewById(R.id.newpass)
+
         var text:TextView = findViewById(R.id.qwe)
 
+        var ss = uwu().Password
 
         val button: Button = findViewById(R.id.save) as Button
         button.setOnClickListener {
-            uwu().Password = newpass.text.toString()
-            text.setText(uwu().Password)
+            newpass = findViewById(R.id.newpass)
+            val pass = newpass.text.toString()
+
+            uwu().new(pass)
+            ss = pass
+            text.setText(ss)
         }
 
 
